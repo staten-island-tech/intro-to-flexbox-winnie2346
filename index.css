@@ -12,6 +12,11 @@ body,
   justify-content: space-around;
 }
 .child {
-  border: 1px solid rgb(255, 141, 179);
+  border: 5px solid rgb(255, 141, 179);
   width: 30%;
+}
+@media screen and (max-width: 900px) {
+  .parent {
+    flex-direction: column;
+  }
 }
