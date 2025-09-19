@@ -1,10 +1,18 @@
 html,
 body,
 * {
+  background-color: rgb(3, 3, 5);
+  color: rgb(201, 154, 94);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 55px;
+  text-align: center;
+  font-family: "Bodoni Moda SC", serif;
+  font-style: normal;
+}
+h1 {
+  font-size: 105;
 }
 .parent {
   font-size: 30px;
@@ -12,11 +20,18 @@ body,
   justify-content: space-around;
 }
 .child {
-  border: 5px solid rgb(255, 141, 179);
-  width: 30%;
+  border: 5px solid rgb(201, 154, 94);
+  width: 100%;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1500px) {
   .parent {
     flex-direction: column;
   }
+}
+.price {
+  font-size: 45px;
+}
+#boom {
+  font-style: italic;
+  font-size: 45px;
 }
