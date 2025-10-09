@@ -7,11 +7,10 @@
   font-family: "Bodoni Moda SC", serif;
   font-style: normal;
   text-align: center;
-  background-image: image(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZvVyHQ8GOoFvoX3JnMkqicfBJ5_tzwqsy0w&s);
 }
 .parent {
   width: 90vw;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -20,7 +19,7 @@
 .child {
   border: 2px solid rgb(201, 154, 94);
   width: 30%;
-  margin: 1.25rem auto;
+  margin: 0.5rem auto;
   border-radius: 20px;
   box-shadow: 5px 2px 10px 2px #c99a5e;
 
