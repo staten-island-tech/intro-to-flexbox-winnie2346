@@ -31,12 +31,9 @@ function addToCart() {
   const buttons = document.querySelectorAll("button");
   const btnArray = Array.from(buttons);
   console.log(buttons);
-  btnArray.forEach(
-    (btn) => btn.addEvenListener("click"),
-    function (event) {}
-  );
-  console.log(event.target.textContent);
-  console.log(event.target.closest("display-cart").getattribute("data-title"));
+  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {}));
+  console.log(Event.target.textContent);
+  console.log(Event.target.closest("display-cart").getattribute("data-title"));
   //find item in the array
   //take that object and push into cart
 }
