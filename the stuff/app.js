@@ -10,7 +10,7 @@ const birdfood = [
 ];
 //create inject function
 function inject(birdfood) {
-  const child = document.querySelector("child");
+  const child = document.querySelector(".child");
   child.insertAdjacentHTML(
     "afterbegin",
     `<div class="child">
@@ -19,6 +19,7 @@ function inject(birdfood) {
       <h3 class="price">${birdfood.price} </h3>
     </div>`
   );
+  inject(products[0]);
 
   //do something
   //query the container
@@ -31,12 +32,15 @@ function addToCart() {
   const buttons = document.querySelectorAll("button");
   const btnArray = Array.from(buttons);
   console.log(buttons);
-  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {}));
-  console.log(Event.target.textContent);
-  console.log(Event.target.closest("display-cart").getattribute("data-title"));
-  //find item in the array
-  //take that object and push into cart
-}
+  btnArray.forEach
+    (btn) => btn.addEventListener("click", function (event) {
+    console.log(event.target.textContent);
+      console.log(event.target.closest("display-cart").getAttribute("data-title")
+    );
+  })
+};
+    //find item in the array
+    //take that object and push into cart
 addToCart(); //made an array
 //using for each to put array of cards on screen
 //work on add to cart(array)
