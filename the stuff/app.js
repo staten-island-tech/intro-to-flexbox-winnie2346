@@ -32,15 +32,25 @@ function addToCart() {
   const buttons = document.querySelectorAll("button");
   const btnArray = Array.from(buttons);
   console.log(buttons);
-  btnArray.forEach
-    (btn) => btn.addEventListener("click", function (event) {
-    console.log(event.target.textContent);
-      console.log(event.target.closest("display-cart").getAttribute("data-title")
-    );
-  })
-};
-    //find item in the array
-    //take that object and push into cart
+  btnArray.forEach(btn);
+  (btn) =>
+    btn.addEventListener("click", function (event) {
+      console.log(event.target.textContent);
+      console.log(
+        event.target.closest("display-cart").getAttribute("data-title")
+      );
+    });
+}
+//find item in the array
+//take that object and push into cart
 addToCart(); //made an array
 //using for each to put array of cards on screen
 //work on add to cart(array)
+
+function filterbySpecies(Species) {
+  const display = document.getElementById("card-display");
+  display.innerHTML = "";
+  //clears the screen
+  const filterSeeds = food.filter((food) => food.Species === Species);
+}
+filterbySpecies("Budgies");
