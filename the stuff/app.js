@@ -7,6 +7,158 @@ const birdfood = [
     img: "images/uh",
     alt: "bird food",
   },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
+  {
+    name: "yummy",
+    price: 0.01,
+    inStock: true,
+    brand: "Premium Bird Feed",
+    img: "images/uh",
+    alt: "bird food",
+  },
 ];
 //create inject function
 function inject(birdfood) {
@@ -47,10 +199,31 @@ addToCart(); //made an array
 //using for each to put array of cards on screen
 //work on add to cart(array)
 
+// function filterbySpecies(Species) {
+//   const display = document.getElementById("card-display");
+//   display.innerHTML = "";
+//   //clears the screen
+//   const filterSeeds = food.filter((food) => food.Species === Species);
+//   filterSeeds.forEach ((birdfood)=>
+//   display.insertAdjacentHTML(
+//     "afterbegin",
+//     `<div class ="food-card">
+//     <h3>${food.title}</h3>
+//     <p><strong>Author</strong></p>
+//     </div>`
+
+//   ))
+// }
+// filterbySpecies("Budgies");
+//put attribute on each card data-species= so and so
 function filterbySpecies(Species) {
-  const display = document.getElementById("card-display");
-  display.innerHTML = "";
-  //clears the screen
-  const filterSeeds = food.filter((food) => food.Species === Species);
+  const cards = document.querySelectorAll(".birdfood");
+  cards.forEach((card) => {
+    const cardCategory = card.getAttribute("data-species");
+    if (genre === cardCategory) {
+      card.computedStyleMap.display = "none";
+    }
+  });
 }
-filterbySpecies("Budgies");
+
+filterbySpecies("Pigeons");
