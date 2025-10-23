@@ -227,3 +227,30 @@ function filterbySpecies(Species) {
 }
 
 filterbySpecies("Pigeons");
+let prod = {
+  name: "yummy",
+  price: 0.01,
+  inStock: true,
+  brand: "Premium Bird Feed",
+  img: "images/uh",
+  alt: "bird food",
+};
+const cart = [];
+function createCartObject(prod) {
+  // ... product copies it
+  const cartProduct = { ...prod, quantity: 1 };
+  return cartProduct;
+  //create cart object here
+}
+function checkCart(prod) {
+  const found = cart.find(
+    (cartItem) => cartItem.title === procartProductd.title
+  );
+  if (found) {
+    found.quantity += 1;
+  } else {
+    cart.push(cartProduct);
+  }
+}
+checkCart(prod);
+console.log(cart);
