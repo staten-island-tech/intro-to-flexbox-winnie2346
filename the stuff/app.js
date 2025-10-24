@@ -1,3 +1,9 @@
+const DOMSelectors = {
+  button: document.getElementById("btn"),
+  name: document.querySelector("#name"),
+  price: document.querySelectorAll(".price"),
+  box: document.getElementById(".card"),
+};
 const birdfood = [
   {
     name: "yummy",
@@ -5,7 +11,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -13,7 +18,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -21,7 +25,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -29,7 +32,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -37,7 +39,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -45,7 +46,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -53,7 +53,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -61,7 +60,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -69,7 +67,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -77,7 +74,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -85,7 +81,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -93,7 +88,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -101,7 +95,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -109,7 +102,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -117,7 +109,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -125,7 +116,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -133,7 +123,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -141,7 +130,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -149,7 +137,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
   {
     name: "yummy",
@@ -157,7 +144,6 @@ const birdfood = [
     inStock: true,
     brand: "Premium Bird Feed",
     img: "images/uh",
-    alt: "bird food",
   },
 ];
 //create inject function
@@ -233,7 +219,6 @@ let prod = {
   inStock: true,
   brand: "Premium Bird Feed",
   img: "images/uh",
-  alt: "bird food",
 };
 const cart = [];
 function createCartObject(prod) {
@@ -243,14 +228,15 @@ function createCartObject(prod) {
   //create cart object here
 }
 function checkCart(prod) {
-  const found = cart.find(
-    (cartItem) => cartItem.title === procartProductd.title
-  );
+  const cartProduct = { ...prod, quantity: 1 };
+  const found = cart.find((cartItem) => cartItem.title === prod.title);
   if (found) {
     found.quantity += 1;
   } else {
-    cart.push(cartProduct);
+    cart.push(prod);
   }
 }
+checkCart(prod);
+console.log(cart);
 checkCart(prod);
 console.log(cart);
