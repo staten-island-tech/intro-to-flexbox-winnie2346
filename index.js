@@ -1,8 +1,9 @@
 const DOMSelectors = {
-  button: document.getElementById("btn"),
-  name: document.querySelector("#name"),
-  price: document.querySelectorAll(".price"),
-  box: document.getElementById(".child"),
+  button: document.getElementsByClassName("btn"),
+  name: document.querySelector("name"),
+  price: document.querySelectorAll("price"),
+  box: document.getElementsByClassName("child"),
+  alt: document.getElementsByClassName("images"),
 };
 const EverythingBirds = [
   {
@@ -21,5 +22,13 @@ const EverythingBirds = [
 
 function inject(EverythingBirds) {
   const child = document.querySelector(".child");
-  child.insertAdjacentHTML("afterbegin");
+  child.insertAdjacentHTML("afterbegin"`<div class="child">
+        <h2>${EverythingBirds.name}</h2>
+        <img
+          class="images"
+          ${EverythingBirds.images}
+        />
+        <h3>${EverythingBirds.price}</h3>
+        </div>`);
 }
+inject(EverythingBirds[0]);
