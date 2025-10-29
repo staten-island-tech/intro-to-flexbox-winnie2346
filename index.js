@@ -9,7 +9,19 @@ const EverythingBirds = [
     name: "Pigeon Feed",
     price: 0.01,
     inStock: true,
-    alt: "pigeons",
-
+    alt: "pigeon1",
+},
+{
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    alt: "pigeon2",
 }
 ];
+function inject(EverythingBirds){
+    const child = document.querySelector(".child");
+    child.insertAdjacentHTML(
+        "afterbegin",
+        
+    )
+}
