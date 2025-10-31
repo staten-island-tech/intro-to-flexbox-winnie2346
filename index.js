@@ -45,5 +45,5 @@ function addToCart() {
       console.log(event.target.closest("child").getAttribute("name"));
     });
 }
-products[2];
+products[3];
 addToCart();
