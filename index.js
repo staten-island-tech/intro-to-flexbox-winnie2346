@@ -20,6 +20,146 @@ const EverythingBirds = [
     img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
     category: "pigeon",
   },
+   {
+    name: "Parakeet Pellets",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "parakeets",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
+   {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+  },
+  {
+    name: "Multivitamins for Pigeons",
+    price: 0.01,
+    inStock: true,
+    img: "https://lafeber.com/wp-content/uploads/2020/09/72630-V1-TF-Pellet-Parakeet-SEP20-WEB.jpg",
+    category: "pigeon",
+  },
 ];
 
 function inject(EverythingBirds) {
@@ -32,7 +172,7 @@ function inject(EverythingBirds) {
         />
         <h3>${EverythingBirds.price}</h3>
         </div>`);
-  inject(EverythingBirds[0]);
+  inject(EverythingBirds);
 }
 EverythingBirds.forEach((EverythingBirds) => inject(EverythingBirds));
 function addToCart() {
@@ -45,5 +185,36 @@ function addToCart() {
       console.log(event.target.closest("child").getAttribute("name"));
     });
 }
-products[3];
+
 addToCart();
+function filterbySpecies(Species) {
+  const cards = document.querySelectorAll(".everything-birds-card");
+  cards.forEach((card) => {
+    const cardCategory = card.getAttribute("data-category");
+    if (genre === cardCategory) {
+      card.computedStyleMap.display = "none";
+    }
+  });
+}
+filterbySpecies("Pigeons");
+let prod = {
+    name: "Pigeon Feed",
+    price: 0.01,
+    inStock: true,
+    img: "https://m.media-amazon.com/images/I/71WBymL3qDL.jpg",
+    category: "pigeon",
+};
+const cart = [];
+function createCartObject(prod) {
+  const cartProduct = { ...prod, quantity: 1 };
+  return cartProduct;
+  }
+  function checkCart(prod) {
+  const cartProduct = { ...prod, quantity: 1 };
+  const found = cart.find((cartItem) => cartItem.title === prod.title);
+  if (found) {
+    found.quantity += 1;
+  } else {
+    cart.push(prod);
+  }
+}
