@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   font-size: 20px;
 }
-.child {
+.card {
   background-color: rgba(255, 156, 75, 0.123);
   border: 2px solid rgb(201, 154, 94);
   margin: 1rem auto;
