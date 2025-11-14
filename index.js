@@ -141,13 +141,10 @@ const EverythingBirds = [
   },
 ];
 function filterbycategory(category) {
-  const filtered = EverythingBirds.filter(
-    (el) => el.category === category
-    // (EverythingBirds) => EverythingBirds.el === category
-  );
-  return filtered;
+  const filtered = EverythingBirds.filter((el) => el.category === category);
+  console.log(filtered);
 }
-console.log("filtered");
+filterbycategory("good");
 
 function totalPrice(EverythingBirds) {
   let total = 0;
