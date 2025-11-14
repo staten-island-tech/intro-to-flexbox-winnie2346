@@ -95,62 +95,65 @@ const EverythingBirds = [
     price: 1,
     quantity: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5V8hl9JiTi3cMlWbtA8JcfcN4fd3Q_dRjkQ&s",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "kentucky fried chicken",
     price: 1,
     quantity: 2,
     img: "https://cdn.sanity.io/images/kbqq3e0r/production/8cab9a549a5bc09e4bcc391632d8640d495f4bd3-1200x667.png?w=3840&q=100",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "98k fried chicken",
     price: 1,
     quantity: 2,
     img: "https://assets.peblla.net/172188762400094b6c106b40d490caaec0cabc325683c.jpg",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "Daves hot chicken",
     price: 1,
     quantity: 2,
     img: "https://www.insidehook.com/wp-content/uploads/2022/08/daves.jpg?fit=1200%2C800",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "Raising Canes",
     price: 1,
     quantity: 2,
     img: "https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_418,q_65,w_600/v1/crm/PalmspringsCA/2022/01/Raising-Canes_ccf3962d-77f6-45fc-8bf7-db7776e97525.png",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "wingstop",
     price: 1,
     quantity: 2,
     img: "https://www.tastingtable.com/img/gallery/every-wingstop-flavor-ranked-worst-to-best/intro-1687882750.jpg",
-    category: "good stuff",
+    category: "good",
   },
   {
     name: "chik fil a",
     price: 1,
     quantity: 2,
     img: "https://d1fd34dzzl09j.cloudfront.net/Images/CFACOM/Customer%20Support/Lunch%20FAQ%20Image.jpg",
-    category: "good stuff",
+    category: "good",
   },
 ];
 function filterbycategory(category) {
   const filtered = EverythingBirds.filter(
-    (el) => EverythingBirds.category === category
+    (el) => el.category === category
+    // (EverythingBirds) => EverythingBirds.el === category
   );
+  return filtered;
 }
+console.log("filtered");
 
-function totalPrice(e) {
+function totalPrice(EverythingBirds) {
   let total = 0;
-  e.forEach((item) => {
+  EverythingBirds.forEach((item) => {
     total = total + item.price * item.quantity;
   });
   return total.toFixed(2);
 }
-console.log(totalPrice(e));
+console.log(totalPrice(EverythingBirds));
