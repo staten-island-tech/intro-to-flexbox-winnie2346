@@ -140,20 +140,22 @@ const EverythingBirds = [
     category: "good",
   },
 ];
-function filterbycategory(category) { //function to filter items by category
-return EverythingBirds.filter((el) => el.category === category);// return go through EverythingBirdsanf filter by category by going through each element and checking if its category matches the desired category
-// return can be be saved in variables and used later and gives data back whereas console.log just prints it out
+function filterbycategory(category) {
+  //function to filter items by category
+  let items = EverythingBirds.filter((el) => el.category === category); //  go through EverythingBirdsanf filter by category by going through each element and checking if its category matches the desired category
+  return items;
+  // return can be be saved in variables and used later and gives data back whereas console.log just prints it out
 }
- const items = filterbycategory("parakeets");// filter items by parakeets category and is under items
- console.log(items); //logs the filtered items
- 
-function totalPrice(items) {// function to calculate total price of items
+const bruh = filterbycategory("good"); // filter items by parakeets category and is under items
+console.log(bruh); //logs the filtered items
+
+function totalPrice(bruh) {
+  // function to calculate total price of items
   let total = 0; //start at 0
-  items.forEach((item) => { // go through each item in items
-    total = total + item.price * item.quantity;// add to total the price times quantity of each item
+  bruh.forEach((item) => {
+    // go through each item in items
+    total = total + item.price * item.quantity; // add to total the price times quantity of each item
   });
   return total.toFixed(2); // return total price rounded to 2 decimal places
 }
-console.log(totalPrice(items)); //Print total price of filtered items
-
-
+console.log(totalPrice(bruh)); //Print total price of filtered items
